@@ -162,16 +162,51 @@ body{
     align-items: center;
 }
 .edit{
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     background-color: #5a95ff;
     border-radius:0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        animation: edit_button_effect 2.5s;
+        
+    } 
+}
+@keyframes edit_button_effect{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    50%{
+        transform: rotate(-180deg) ;  
+    }
+    100%{
+        transform: rotate(0deg) ;
+    }
 }
 .delete{
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     background-color: red;
     border-radius:0.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        animation: delete_button_effect 2.5s;
+    }     
+}
+@keyframes delete_button_effect{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    50%{
+        transform: rotate(180deg) ;  
+    }
+    100%{
+        transform: rotate(0deg) ;
+    }
 }
 
 
