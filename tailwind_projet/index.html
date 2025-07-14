@@ -8,25 +8,142 @@
   <link rel="stylesheet" href="/src/style.css">
 </head>
 
-<body class="flex flex-col">
+<body class="flex flex-col overflow-x-hidden">
   <nav id="navbar" class="flex items-center justify-between p-[0.4rem_1rem]">
-    <div class="logo">
-      <a href="/"><img class="w-[4rem] h-auto" src="/assets/images/logo.svg" alt="Logo" /></a>
-    </div>
     <div class="">
       <svg id="burger menu" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg><!-- burger menu -->
     </div>
+    <div class="logo">
+      <a class="text-lg font-bold flex" href="/"><p >E-</p><p class="text-red-600">Shopping</p></a>
+    </div>
+    <div class="">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000"><path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z"/></svg> -->
+       <svg class="rounded-lg p-[0.3rem] flex items-center justify-center bg-red-200" xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#000"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+    </div>
   </nav>
+  <hr>
 <!--  hero section -->
-  <div class="h-[30rem] bg-red-500 overflow-x-scroll items-center justify-center flex gap-2">
-    <div class="w-[20rem] h-[10rem] bg-green-200">1</div>
-    <div class="w-[20rem] h-[10rem] bg-green-200">2</div>
-    <div class="w-[20rem] h-[10rem] bg-green-200">3</div>
-    <div class="w-[20rem] h-[10rem] bg-green-200">4</div>
-    <div class="w-[20rem] h-[10rem] bg-green-200">5</div>
-
+  <div class="flex flex-col gap-3 items-center bg-gray-500 h-[50vh]" style="background: url(assets/images/casque.png); background-size: 70% auto; background-repeat: no-repeat; background-position: center;">
+    <h1 class="text-2xl mt-[10rem] text-center text-red-600 font-[800] pl-4 pr-4">The best is there at best price</h1>
+    <p class="font-[500] text-center w-[80%]">Discover amazing deals on your favorite products.</p>
+    <!-- section bouton --> 
+    <div class=" flex gap-[2rem] font-bold">
+      <button class="text-red-600 py-2 px-4 border-red-600 border-[0.2rem] border rounded-lg">More</button>
+      <button class="bg-red-600 text-white py-2 px-4 rounded-lg">Shop Now</button>
+    </div>
   </div>
-
+  <!-- categories -->
+  <section class="mt-[2rem]">
+    <h1 class="text-2xl font-bold pl-4 mb-6">Categories</h1>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+      <div class="flex items-center bg-green-500 rounded-xl shadow-md p-4 gap-4">
+        <img class="w-[4rem] h-[4rem] object-cover rounded-lg" src="assets/images/fashion.png" alt="Fashion & Accessories">
+        <div>
+          <h2 class="text-lg font-bold">Fashion & Accessories</h2>
+          <p class="text-gray-700 text-sm font-semibold">8 Products</p>
+        </div>
+      </div>
+      <div class="flex items-center bg-blue-500 rounded-xl shadow-md p-4 gap-4">
+        <img class="w-[4rem] h-[4rem] object-cover rounded-lg" src="assets/images/iphone.png" alt="Electronics & Gadgets">
+        <div>
+          <h2 class="text-lg font-bold">Electronics & Gadgets</h2>
+          <p class="text-gray-700 text-sm font-semibold">8 Products</p>
+        </div>
+      </div>
+      <div class="flex items-center bg-violet-500 rounded-xl shadow-md p-4 gap-4">
+        <img class="w-[4rem] h-[4rem] object-cover rounded-lg" src="assets/images/product.png" alt="Beauty & Health">
+        <div>
+          <h2 class="text-lg font-bold">Beauty & Health</h2>
+          <p class="text-gray-700 text-sm font-semibold">8 Products</p>
+        </div>
+      </div>
+      <div class="flex items-center bg-red-200 rounded-xl shadow-md p-4 gap-4">
+        <img class="w-[4rem] h-[4rem] object-cover rounded-lg" src="assets/images/casque1.png" alt="Books, Music & Entertainment">
+        <div>
+          <h2 class="text-lg font-bold">Books, Music & Entertainment</h2>
+          <p class="text-gray-700 text-sm font-semibold">8 Products</p>
+        </div>
+      </div>
+      <div class="flex items-center bg-yellow-200 rounded-xl shadow-md p-4 gap-4">
+        <img class="w-[4rem] h-[4rem] object-cover rounded-lg" src="assets/images/toy.png" alt="Baby & Kids">
+        <div>
+          <h2 class="text-lg font-bold">Baby & Kids</h2>
+          <p class="text-gray-700 text-sm font-semibold">8 Products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- best products -->
+   <div class="mt-[2rem]">
+    <h1 class="text-2xl font-bold pl-4 mb-6">Shopping area</h1>
+    <div class="flex flex-wrap justify-center gap-4 mt-4">
+      <div class="w-[20rem] h-[30rem] bg-white rounded-lg shadow-md p-4">
+        <img class="w-full h-[20rem] object-cover rounded-lg" src="assets/images/casque1.png" alt="Casque">
+        <h2 class="text-lg font-bold mt-2">Casque Bluetooth</h2>
+        <p class="text-gray-600">Prix: 50€</p>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg mt-2">Ajouter au panier</button>
+      </div>
+      <div class="w-[20rem] h-[30rem] bg-white rounded-lg shadow-md p-4">
+        <img class="w-full h-[20rem] object-cover rounded-lg" src="assets/images/iphone.png" alt="Smartphone">
+        <h2 class="text-lg font-bold mt-2">Smartphone XYZ</h2>
+        <p class="text-gray-600">Prix: 299€</p>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg mt-2">Ajouter au panier</button>
+      </div>
+      <div class="w-[20rem] h-[30rem] bg-white rounded-lg shadow-md p-4">
+        <img class="w-full h-[20rem] object-cover rounded-lg" src="assets/images/fashion.png" alt="Veste">
+        <h2 class="text-lg font-bold mt-2">Veste en Cuir</h2>
+        <p class="text-gray-600">Prix: 120€</p>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg mt-2">Ajouter au panier</button>
+      </div>
+      <div class="w-[20rem] h-[30rem] bg-white rounded-lg shadow-md p-4">
+        <img class="w-full h-[20rem] object-cover rounded-lg" src="assets/images/toy.png" alt="Jouet">
+        <h2 class="text-lg font-bold mt-2">Jouet en Bois</h2>
+        <p class="text-gray-600">Prix: 30€</p>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg mt-2">Ajouter au panier</button>
+      </div>
+      <!-- <div class="w-[20rem] h-[30rem] bg-white rounded-lg shadow-md p-4">
+        <img class="w-full h-[20rem] object-cover rounded-lg" src="assets/images/product.png" alt="Crème Hydratante">
+        <h2 class="text-lg font-bold mt-2">Crème Hydratante</h2>
+        <p class="text-gray-600">Prix: 25€</p>
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg mt-2">Ajouter au panier</button>
+      </div> -->
+      <div class="w-screen flex items-center justify-center mt-4">
+        <button class="bg-red-600 text-white py-2 px-4 rounded-lg">Voir plus</button>
+    </div>
+      <!-- Add more products as needed -->
+   </div>
+   <!-- last section before footer -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6 px-4" >
+      <div class="w-full h-[15rem] rounded-lg bg-pink-300" style="background: url(assets/images/casque.png); background-size: contain; background-repeat: no-repeat; background-position: center;">
+        <div class="bg-gray-300 opacity-80 w-full h-full flex justify-end p-4 rounded-lg flex-col">
+          <h1 class="text-2xl font-bold">Virtual reality experience</h1>
+          <p class="text-xl w-20 font-bold border-b border-red-600 border-b-[0.14rem] text-red-600">Discover</p>
+        </div>
+      </div>
+      <div class="w-full h-[15rem] rounded-lg bg-pink-300" style="background: url(assets/images/casque.png); background-size: contain; background-repeat: no-repeat; background-position: center;">
+        <div class="bg-gray-300 opacity-80 w-full h-full flex justify-end p-4 rounded-lg flex-col">
+          <h1 class="text-2xl font-bold">Make your life Easy & Stylish</h1>
+          <p class="text-xl w-20 font-bold border-b border-red-600 border-b-[0.14rem] text-red-600">Shoper</p>
+        </div>
+      </div>
+      <div class="w-full h-[15rem] rounded-lg bg-pink-300" style="background: url(assets/images/casque.png); background-size: contain; background-repeat: no-repeat; background-position: center;">
+        <div class="bg-gray-300 opacity-80 w-full h-full flex justify-end p-4 rounded-lg flex-col">
+          <h1 class="text-2xl font-bold">Get your quad as early as you can</h1>
+          <p class="text-xl w-9 font-bold border-b border-red-600 border-b-[0.14rem] text-red-600">Buy</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-gray-800 text-white p-6 mt-6">
+      <div class="container mx-auto text-center">
+        <p class="text-sm">© 2025 E-Shopping. All rights reserved.</p>
+        <div class="flex justify-center gap-4 mt-2">
+          <a href="#" class="text-white hover:text-red-600">Privacy Policy</a>
+          <a href="#" class="text-white hover:text-red-600">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
+  </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 
